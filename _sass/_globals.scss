@@ -8,3 +8,18 @@ html, body {
 * {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
+
+#title {
+	font-family: 'PlayfairDisplay-BoldItalic', serif; // change to google fonts
+	text-transform: uppercase;
+	font-size: 60px;
+	color: #000000;
+	letter-spacing: 3px;
+	margin-top: 50px;
+	margin-left: 20px;
+	line-height: 48px
+}
+
+.gray {
+	color: #8C8C8C
+}
