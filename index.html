@@ -5,15 +5,15 @@ layout: default
 <div class="row">
   <div class="col-3 left-column-1">
     <div class="left-column-2">
-      <p id="title">Mind<br>the<br>gap</p>
+      <p id="title" class="noselect">Mind<br>the<br>gap</p>
       <p id="subheading">An interactive chart of the<br>occupations of US workers.</p>
       <hr>
 
       <p class="select-title category-title">X-Axis</p>
-      <select id="xaxis" onchange="changeAxis()">
-        <option value="men_weekly">Men Weekly Salary</option>
-        <option value="women_weekly" selected>Women Weekly Salary</option>
-        <option value="total_weekly">Average Weekly Salary</option>
+      <select id="xaxis" class="clickable" onchange="changeAxis()">
+        <option value="men_weekly">Average weekly earnings for men</option>
+        <option value="women_weekly" selected>Average weekly earnings for women</option>
+        <option value="total_weekly">Average weekly earnings</option>
         <option value="women">% Women</option>
         <option value="men">% Men</option>
         <option value="white">% White</option>
@@ -22,10 +22,10 @@ layout: default
         <option value="latino">% Hispanic or Latino</option>
         <option value="median_age">Median Age</option>
       </select>
-      <p class="select-title category-title">Y-Axis</p>
+      <p class="select-title category-title" class="clickable">Y-Axis</p>
       <select id="yaxis" onchange="changeAxis()">
-        <option value="men_weekly" selected>Men Weekly Salary</option>
-        <option value="women_weekly">Women Weekly Salary</option>
+        <option value="men_weekly" selected>Average weekly earnings for men</option>
+        <option value="women_weekly">Average weekly earnings for women</option>
         <option value="total_weekly">Average Weekly Salary</option>
         <option value="women">% Women</option>
         <option value="men">% Men</option>
@@ -37,49 +37,111 @@ layout: default
       </select>
 
       <hr>
-      <div class="tooltip-w3">Hover over me
-        <span class="tooltiptext">Tooltip text</span>
-      </div>
+
       <p>Legend</p>
       <div class="legend">
         <div class="legend-category" data-supercategory="management">
           <p class="category-title">Management</p>
-          <div class="architecture square"></div>
-          <div class="arts square"></div>
-          <div class="business square"></div>
-          <div class="community square"></div>
-          <div class="computer square"></div>
-          <div class="education square"></div>
-          <div class="healthcare square"></div>
-          <div class="legal square"></div>
-          <div class="life square"></div>
-          <div class="management square"></div>
+          <div class="tooltip-w3">
+            <div class="architecture square"></div>
+            <span class="tooltiptext">Architecture and engineering occupations</span>
+          </div>
+          <div class="tooltip-w3">
+            <div class="arts square"></div>
+            <span class="tooltiptext">Arts, design, entertainment, sports, and media occupations</span>
+          </div>
+          <div class="tooltip-w3">
+            <div class="business square"></div>
+            <span class="tooltiptext">Business and financial operations occupations</span>
+          </div>
+          <div class="tooltip-w3">
+            <div class="community square"></div>
+            <span class="tooltiptext">Community and social service occupations</span>
+          </div>
+          <div class="tooltip-w3">
+            <div class="education square"></div>
+            <span class="tooltiptext">Education, training, and library occupations</span>
+          </div>
+          <div class="tooltip-w3">
+            <div class="healthcare square"></div>
+            <span class="tooltiptext">Healthcare practitioners and technical occupations</span>
+          </div>
+          <div class="tooltip-w3">
+            <div class="legal square"></div>
+            <span class="tooltiptext">Legal occupations</span>
+          </div>
+          <div class="tooltip-w3">
+            <div class="life square"></div>
+            <span class="tooltiptext">Life, physical, and social science occupations</span>
+          </div>
+          <div class="tooltip-w3">
+            <div class="management square"></div>
+            <span class="tooltiptext">Management occupations</span>
+          </div>
         </div>
         <div class="legend-category">
           <p class="category-title">Production/transportation</p>
-          <div class="production square"></div>
-          <div class="transportation square"></div>
+          <div class="tooltip-w3">
+            <div class="production square"></div>
+            <span class="tooltiptext">Production occupations</span>
+          </div>
+          <div class="tooltip-w3">
+            <div class="transportation square"></div>
+            <span class="tooltiptext">Transportation and material moving occupations</span>
+          </div>
         </div>
         <div class="legend-category">
           <p class="category-title">Natural resources</p>
-          <div class="construction square"></div>
-          <div class="farming square"></div>
-          <div class="installation square"></div>
+          <div class="tooltip-w3">
+            <div class="construction square"></div>
+            <span class="tooltiptext">Construction and extraction occupation</span>
+          </div>
+          <div class="tooltip-w3">
+            <div class="farming square"></div>
+            <span class="tooltiptext">Farming, fishing, and forestry occupations</span>
+          </div>
+          <div class="tooltip-w3">
+            <div class="installation square"></div>
+            <span class="tooltiptext">Installation, maintenance, and repair occupations</span>
+          </div>
         </div>
         <div class="legend-category">
           <p class="category-title">Sales/office</p>
-          <div class="office square"></div>
-          <div class="sales square"></div>
+          <div class="tooltip-w3">
+            <div class="office square"></div>
+            <span class="tooltiptext">Office and administrative support occupations</span>
+          </div>
+          <div class="tooltip-w3">
+            <div class="sales square"></div>
+            <span class="tooltiptext">Sales and related occupations</span>
+          </div>
         </div>
         <div class="legend-category" data-supercategory="service">
           <p class="category-title">Service</p>
-          <div class="building square"></div>
-          <div class="food square"></div>
-          <div class="personal square"></div>
-          <div class="protective square"></div>
-          <div class="healthcare2 square"></div>
+          <div class="tooltip-w3">
+            <div class="building square"></div>
+            <span class="tooltiptext">Building and grounds cleaning and maintenance occupations</span>
+          </div>
+          <div class="tooltip-w3">
+            <div class="food square"></div>
+            <span class="tooltiptext">Food preparation and serving related occupations</span>
+          </div>
+          <div class="tooltip-w3">
+            <div class="personal square"></div>
+            <span class="tooltiptext">Personal care and service occupations</span>
+          </div>
+          <div class="tooltip-w3">
+            <div class="protective square"></div>
+            <span class="tooltiptext">Protective service occupations</span>
+          </div>
+          <div class="tooltip-w3">
+            <div class="healthcare2 square"></div>
+            <span class="tooltiptext">Healthcare support occupations</span>
+          </div>
         </div>
       </div>
+      <hr>
+      <a class="reset-zoom category-title clickable" onclick="resetZoom()">Reset Zoom</a>
 
     </div>
   </div>
@@ -98,15 +160,15 @@ var current_datasets = [];
 
 var properLabels = {
   "num_employed": "Number Employed",
-  "women": "Women",
-  "men": "Men",
-  "white": "White American",
-  "black": "African American",
-  "asian": "Asian American",
-  "latino": "Hispanic/Latino descent",
-  "total_weekly": "Median weekly earnings",
-  "men_weekly": "Median weekly earnings for men",
-  "women_weekly": "Median weekly earnings for women",
+  "women": "Percentage of Women",
+  "men": "Percentage of Men",
+  "white": "Percentage of White Americans",
+  "black": "Percentage of African Americans",
+  "asian": "Percentage of Asian Americans",
+  "latino": "Percentage of Hispanic/Latino descent",
+  "total_weekly": "Average weekly earnings",
+  "men_weekly": "Average weekly earnings for men",
+  "women_weekly": "Average weekly earnings for women",
   "median_age": "Median age"
 }
 
@@ -161,6 +223,10 @@ function generateRealDatasets() {
     })
   });
   // console.log('generate real datasets called')
+}
+
+function resetZoom() {
+  scatterChart.resetZoom()
 }
 
 function chartOptions() {
@@ -241,15 +307,16 @@ function chartOptions() {
                     // position: 'bottom'
                 }]
             },
-            // Container for pan options
             pan: {
-                // Boolean to enable panning
-                enabled: true,
-                mode: 'y'
-            },
+          		enabled: true,
+          		mode: 'xy',
+          		speed: 20,
+          		threshold: 10
+          	},
 
             // Container for zoom options
             zoom: {
+              // drag: true,
                 speed: 0.01,
                 enabled: true,
                 mode: 'xy',
