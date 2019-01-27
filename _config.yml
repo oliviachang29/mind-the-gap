@@ -1,6 +1,5 @@
 title: Mind the Gap
-description: >
-An beautiful, interactive visualization of US occupations.
+description: An beautiful, interactive visualization of US occupations.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
