@@ -9,14 +9,13 @@ body {
   overflow-x: hidden; }
 
 * {
-  font-family: Fakt Pro,Helvetica Neue,Helvetica,Arial,sans-serif; }
+  font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif; }
 
 .left-column-1 {
-  background-color: #2A2B2C;
-  padding-right: 0 !important; }
+  background-color: #2A2B2C; }
 
 .left-column-2 {
-  padding-left: 40px;
+  margin-left: 40px;
   padding-right: 0;
   color: white;
   padding-bottom: 100%; }
@@ -30,25 +29,119 @@ body {
   font-size: 60px;
   letter-spacing: 3px;
   margin-top: 50px;
-  line-height: 48px; }
+  line-height: 48px;
+  margin-bottom: 30px; }
 
 #subheading {
-  font-family: 'Fakt Pro', serif; }
+  font-weight: bold; }
+
+hr {
+  background-color: white;
+  width: 80%;
+  margin-left: 0;
+  margin-top: 10px; }
 
 .gray {
   color: #8C8C8C; }
+
+.legend {
+  display: flex;
+  flex-direction: column; }
+
+.legend-category {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -5px; }
+
+.category-title {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-right: 10px; }
+
+.square {
+  height: 15px;
+  width: 15px; }
+
+.architecture {
+  background-color: #ffe6eb; }
+
+.arts {
+  background-color: #ffccd7; }
+
+.business {
+  background-color: #ffb3c3; }
+
+.community {
+  background-color: #ff99af; }
+
+.computer {
+  background-color: #ff809b; }
+
+.education {
+  background-color: #ff6687; }
+
+.healthcare {
+  background-color: #ff4d73; }
+
+.legal {
+  background-color: #ff335f; }
+
+.life {
+  background-color: #ff1a4b; }
+
+.management {
+  background-color: #ff0037; }
+
+.construction {
+  background-color: #d9ffcc; }
+
+.farming {
+  background-color: #b3ff99; }
+
+.installation {
+  background-color: #66ff33; }
+
+.production {
+  background-color: #ffffb3; }
+
+.transportation {
+  background-color: #ffff63; }
+
+.office {
+  background-color: #99e6ff; }
+
+.sales {
+  background-color: #61d7ff; }
+
+.building {
+  background-color: #e699ff; }
+
+.food {
+  background-color: #df80ff; }
+
+.personal {
+  background-color: #d761ff; }
+
+.protective {
+  background-color: #d24dff; }
+
+.healthcare2 {
+  background-color: #cc33ff; }
 
 #chart {
   margin-left: 30px; }
 
 .select-title {
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-weight: bold; }
 
 select {
   display: inline;
   border: 0;
   width: auto;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -57,14 +150,10 @@ select {
   background-color: transparent;
   transition: all .4s ease-in-out;
   color: white;
-  background-image: linear-gradient(120deg, #C0C0C0 0%, #C0C0C0 100%);
-  background-repeat: no-repeat;
-  background-size: 0% 12.5px;
-  background-position: 0% 180%;
-  transition: all 0.3s; }
+  font-weight: 100;
+  transition: all 0.2s; }
   select:hover {
-    background-size: 50% 12.5px;
-    opacity: 0.9;
+    opacity: 0.6;
     cursor: pointer; }
   select option {
     color: white;
@@ -72,3 +161,27 @@ select {
     padding: 10px;
     -webkit-appearance: none;
     -moz-appearance: none; }
+
+.tooltip-w3 {
+  color: white;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted white;
+  /* If you want dots under the hoverable text */ }
+
+/* Tooltip text */
+.tooltip-w3 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1; }
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip-w3:hover .tooltiptext {
+  visibility: visible; }
