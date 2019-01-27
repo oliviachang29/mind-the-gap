@@ -18,7 +18,8 @@ body {
 .left-column-2 {
   padding-left: 40px;
   padding-right: 0;
-  color: white; }
+  color: white;
+  padding-bottom: 100%; }
 
 .right-col {
   padding: 0; }

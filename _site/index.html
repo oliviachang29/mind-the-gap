@@ -29,8 +29,8 @@
       <p id="subheading">An interactive chart of the<br>occupations of US workers.</p>
       <p class="select-title">Select x-axis:</p>
       <select id="xaxis" onchange="changeAxis()">
-        <option value="women">Women</option>
-        <option value="men">Men</option>
+        <option value="women">% Women</option>
+        <option value="men">% Men</option>
         <option value="white">White</option>
         <option value="black">Black</option>
         <option value="asian">Asian</option>
@@ -89,16 +89,16 @@ function changeAxis() {
 function updateChart(chart) {
   // maybe not necessary?
   // console.log(chart.options);
-  // $('#chart').remove();
-  // $('.right-col').append('<canvas id="chart" width="600" height="400"><canvas>');
-  // ctx = document.getElementById('chart').getContext('2d');
-  // scatterChart = new Chart(ctx, chartOptions());
+  $('#chart').remove();
+  $('.right-col').append('<canvas id="chart" width="600" height="400"><canvas>');
+  ctx = document.getElementById('chart').getContext('2d');
+  scatterChart = new Chart(ctx, chartOptions());
   //
-  chart.options.scales.xAxes[0].scaleLabel.labelString = x_axis;
-  chart.options.scales.yAxes[0].scaleLabel.labelString = y_axis;
-  chart.datasets = current_datasets;
-  chart.update();
 
+  // chart.options.scales.xAxes[0].scaleLabel.labelString = x_axis;
+  // chart.options.scales.yAxes[0].scaleLabel.labelString = y_axis;
+  // chart.data.datasets = [];
+  // chart.update();
   // console.log(chart.options.scales)
 }
 
@@ -119,6 +119,7 @@ function numberWithCommas(x) {
 }
 
 function generateRealDatasets() {
+  current_datasets = []
   // go through datasets.js and return a real dataset
   datasets.forEach(function(currentValue, i) {
     current_datasets.push({
@@ -221,7 +222,14 @@ var scatterChart;
 
 scatterChart = new Chart(ctx, chartOptions());
 </script>
-<!-- <body>
+
+
+
+
+
+
+<!--
+<body>
   <div style="width:75%;">
     <canvas id="canvas"></canvas>
   </div>
