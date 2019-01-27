@@ -31,7 +31,7 @@
   <div class="col-3 left-column-1">
     <div class="left-column-2">
       <p id="title" class="noselect">Mind<br>the<br>gap</p>
-      <p id="subheading">An interactive chart of the<br>occupations of US workers.</p>
+      <p id="subheading">An beautiful, interactive visualization of US occupations.</p>
       <hr>
 
       <p class="select-title category-title">X-Axis</p>
@@ -63,110 +63,153 @@
 
       <hr>
 
-      <p>Legend</p>
+      <p>Filter</p>
       <div class="legend">
         <div class="legend-category" data-supercategory="management">
           <p class="category-title">Management</p>
           <div class="tooltip-w3">
-            <div class="architecture square"></div>
+            <a onclick="clickCategory('Architecture and engineering occupations')">
+              <div class="architecture square"></div>
+            </a>
             <span class="tooltiptext">Architecture and engineering occupations</span>
           </div>
           <div class="tooltip-w3">
-            <div class="arts square"></div>
+            <a onclick="clickCategory('Arts, design, entertainment, sports, and media occupations')">
+              <div class="arts square"></div>
+            </a>
             <span class="tooltiptext">Arts, design, entertainment, sports, and media occupations</span>
           </div>
           <div class="tooltip-w3">
-            <div class="business square"></div>
+            <a onclick="clickCategory('Business and financial operations occupations')">
+              <div class="business square"></div>
+            </a>
             <span class="tooltiptext">Business and financial operations occupations</span>
           </div>
           <div class="tooltip-w3">
-            <div class="community square"></div>
+            <a onclick="clickCategory('Community and social service occupations')">
+              <div class="community square"></div>
+            </a>
             <span class="tooltiptext">Community and social service occupations</span>
           </div>
           <div class="tooltip-w3">
-            <div class="education square"></div>
+            <a onclick="clickCategory('Education, training, and library occupations')">
+              <div class="education square"></div>
+            </a>
             <span class="tooltiptext">Education, training, and library occupations</span>
           </div>
           <div class="tooltip-w3">
-            <div class="healthcare square"></div>
+            <a onclick="clickCategory('Healthcare practitioners and technical occupations')">
+              <div class="healthcare square"></div>
+            </a>
             <span class="tooltiptext">Healthcare practitioners and technical occupations</span>
           </div>
           <div class="tooltip-w3">
-            <div class="legal square"></div>
+            <a onclick="clickCategory('Legal occupations')">
+              <div class="legal square"></div>
+            </a>
             <span class="tooltiptext">Legal occupations</span>
           </div>
           <div class="tooltip-w3">
-            <div class="life square"></div>
+            <a onclick="clickCategory('Life, physical, and social science occupations')">
+              <div class="life square"></div>
+            </a>
             <span class="tooltiptext">Life, physical, and social science occupations</span>
           </div>
           <div class="tooltip-w3">
-            <div class="management square"></div>
+            <a onclick="clickCategory('Management occupations')">
+              <div class="management square"></div>
+            </a>
             <span class="tooltiptext">Management occupations</span>
           </div>
         </div>
         <div class="legend-category">
           <p class="category-title">Production/transportation</p>
           <div class="tooltip-w3">
-            <div class="production square"></div>
+            <a onclick="clickCategory('Production occupations')">
+              <div class="production square"></div>
+            </a>
             <span class="tooltiptext">Production occupations</span>
           </div>
           <div class="tooltip-w3">
-            <div class="transportation square"></div>
+            <a onclick="clickCategory('Transportation and material moving occupations')">
+              <div class="transportation square"></div>
+            </a>
             <span class="tooltiptext">Transportation and material moving occupations</span>
           </div>
         </div>
         <div class="legend-category">
           <p class="category-title">Natural resources</p>
           <div class="tooltip-w3">
-            <div class="construction square"></div>
+            <a onclick="clickCategory('Construction and extraction occupation')">
+              <div class="construction square"></div>
+            </a>
             <span class="tooltiptext">Construction and extraction occupation</span>
           </div>
           <div class="tooltip-w3">
-            <div class="farming square"></div>
+            <a onclick="clickCategory('Farming, fishing, and forestry occupations')">
+              <div class="farming square"></div>
+            </a>
             <span class="tooltiptext">Farming, fishing, and forestry occupations</span>
           </div>
           <div class="tooltip-w3">
-            <div class="installation square"></div>
+            <a onclick="clickCategory('Installation, maintenance, and repair occupations')">
+              <div class="installation square"></div>
+            </a>
             <span class="tooltiptext">Installation, maintenance, and repair occupations</span>
           </div>
         </div>
         <div class="legend-category">
           <p class="category-title">Sales/office</p>
           <div class="tooltip-w3">
-            <div class="office square"></div>
+            <a onclick="clickCategory('Office and administrative support occupations')">
+              <div class="office square"></div>
+            </a>
             <span class="tooltiptext">Office and administrative support occupations</span>
           </div>
           <div class="tooltip-w3">
-            <div class="sales square"></div>
+            <a onclick="clickCategory('Sales and related occupations')">
+              <div class="sales square"></div>
+            </a>
             <span class="tooltiptext">Sales and related occupations</span>
           </div>
         </div>
         <div class="legend-category" data-supercategory="service">
           <p class="category-title">Service</p>
           <div class="tooltip-w3">
-            <div class="building square"></div>
+            <a onclick="clickCategory('Building and grounds cleaning and maintenance occupations')">
+              <div class="building square"></div>
+            </a>
             <span class="tooltiptext">Building and grounds cleaning and maintenance occupations</span>
           </div>
           <div class="tooltip-w3">
-            <div class="food square"></div>
+            <a onclick="clickCategory('Food preparation and serving related occupations')">
+              <div class="food square"></div>
+            </a>
             <span class="tooltiptext">Food preparation and serving related occupations</span>
           </div>
           <div class="tooltip-w3">
-            <div class="personal square"></div>
+            <a onclick="clickCategory('Personal care and service occupations')">
+              <div class="personal square"></div>
+            </a>
             <span class="tooltiptext">Personal care and service occupations</span>
           </div>
           <div class="tooltip-w3">
-            <div class="protective square"></div>
+            <a onclick="clickCategory('Protective service occupations')">
+              <div class="protective square"></div>
+            </a>
             <span class="tooltiptext">Protective service occupations</span>
           </div>
           <div class="tooltip-w3">
-            <div class="healthcare2 square"></div>
+            <a onclick="clickCategory('Healthcare support occupations')">
+              <div class="healthcare2 square"></div>
+            </a>
             <span class="tooltiptext">Healthcare support occupations</span>
           </div>
         </div>
       </div>
       <hr>
       <a class="reset-zoom category-title clickable" onclick="resetZoom()">Reset Zoom</a>
+      <a class="reset-zoom category-title clickable" onclick="showAllCategories()">Show All Categories</a>
 
     </div>
   </div>
@@ -181,6 +224,32 @@
 
 var ctx = document.getElementById('chart').getContext('2d');
 var x_axis, y_axis;
+var current_category_selections = {
+  "Architecture and engineering occupations": true,
+  "Arts, design, entertainment, sports, and media occupations": true,
+  "Business and financial operations occupations": true,
+  "Community and social service occupations": true,
+  "Computer and mathematical occupations": true,
+  "Education, training, and library occupations": true,
+  "Healthcare practitioners and technical occupations": true,
+  "Legal occupations": true,
+  "Life, physical, and social science occupations": true,
+  "Management occupations": true,
+  "Construction and extraction occupation": true,
+  "Farming, fishing, and forestry occupations": true,
+  "Installation, maintenance, and repair occupations": true,
+  "Production occupations": true,
+  "Transportation and material moving occupations": true,
+  "Office and administrative support occupations": true,
+  "Sales and related occupations": true,
+  "Building and grounds cleaning and maintenance occupations": true,
+  "Food preparation and serving related occupations": true,
+  "Personal care and service occupations": true,
+  "Protective service occupations": true,
+  "Healthcare support occupations": true,
+};
+
+
 var current_datasets = [];
 
 var properLabels = {
@@ -196,6 +265,41 @@ var properLabels = {
   "women_weekly": "Average weekly earnings for women",
   "median_age": "Median age"
 }
+
+function showAllCategories() {
+  // set all categories true
+  Object.keys(current_category_selections).forEach(function(key) {
+    current_category_selections[key] = true;
+  });
+
+  regenerateAndUpdate()
+}
+
+function clickCategory(category) {
+  var allTrue = true;
+
+  Object.keys(current_category_selections).forEach(function(key) {
+    if (current_category_selections[key] == false) {
+      allTrue = false;
+    }
+  });
+
+  if (allTrue) {
+    Object.keys(current_category_selections).forEach(function(key) {
+      current_category_selections[key] = false;
+    });
+  }
+
+  current_category_selections[category] = true;
+
+  regenerateAndUpdate()
+}
+
+function regenerateAndUpdate() {
+  generateRealDatasets();
+  updateChart(scatterChart);
+}
+
 
 function getXaxisValue() {
   x_axis = document.getElementById("xaxis").value;
@@ -241,11 +345,13 @@ function generateRealDatasets() {
   current_datasets = []
   // go through datasets.js and return a real dataset
   datasets.forEach(function(currentValue, i) {
-    current_datasets.push({
-      fill: currentValue.fill,
-      backgroundColor: currentValue.backgroundColor,
-      data: createDataset(x_axis,y_axis,currentValue.data),
-    })
+    if (current_category_selections[currentValue.label]) {
+      current_datasets.push({
+        fill: currentValue.fill,
+        backgroundColor: currentValue.backgroundColor,
+        data: createDataset(x_axis,y_axis,currentValue.data),
+      })
+    }
   });
   // console.log('generate real datasets called')
 }

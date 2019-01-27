@@ -79,7 +79,8 @@ hr {
   width: 15px;
   transition: .2s all; }
   .square:hover {
-    opacity: 0.8; }
+    opacity: 0.8;
+    cursor: pointer; }
 
 .architecture {
   background-color: #ffe6eb; }
