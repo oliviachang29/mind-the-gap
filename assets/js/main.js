@@ -171,15 +171,19 @@ function chartOptions() {
 
                   label.push("Women: " + item.women + "%");
                   label.push("Men: " + item.men + "%");
+                  label.push(""); // new line
+
                   label.push("White: " + item.white + "%");
                   label.push("Black: " + item.black + "%");
                   label.push("Asian: " + item.asian + "%");
                   label.push("Hispanic/Latino: " + item.latino + "%");
                   label.push(""); // new line
+
                   label.push("Average Salary: $" + numberWithCommas(item.total_weekly) + "/week");
                   label.push("Average Male Salary: $" + numberWithCommas(item.men_weekly) + "/week");
                   label.push("Average Female Salary: $" + numberWithCommas(item.women_weekly) + "/week");
                   label.push(""); // new line
+                  
                   label.push("Median Age: " + item.median_age + " years");
                   return label;
                 },

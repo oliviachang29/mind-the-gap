@@ -26,7 +26,7 @@ Formatting all the data we copied from the BLS proved to be a lot of work since 
 Chart.js is more difficult than we initially thought. We're proud of how nice our website looks, and how smoothly it runs.
 
 ## What's next for Mind the Gap
-First, we would like to build a program that automatically scrapes the information from the bureau whenever the website is updated. This time, we created and formatted the entire dataset manually, which costed us a lot of time. Having the database update itself will allow us to no longer need to go through all 300 plus jobs every time something gets updated, which would save us a significant amount of effort.
+First, we would like to build a program that automatically scrapes the information from the bureau whenever the website is updated. This time, we created and formatted the entire dataset manually, which cost us a lot of time. Having the database update itself will allow us to no longer need to go through all 300 plus jobs every time something gets updated, which would save us a significant amount of effort.
 
 Second, we would like to expand our database. As mentioned before, it currently only contains the newest statistics for the entire nation, and does not have data from previous years. We would also like to add information on jobs by county and state.
 
