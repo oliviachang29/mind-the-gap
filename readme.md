@@ -1,6 +1,6 @@
 # Mind the Gap
 
-<img src="assets/images/demo.png" width="500" style="margin: 0 auto">
+<img src="assets/images/demo.png" width="100%" style="margin: 0 auto">
 
 A beautiful, interactive visualization of US occupations.
 
