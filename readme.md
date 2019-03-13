@@ -4,7 +4,7 @@
 
 A beautiful, interactive visualization of US occupations.
 
-PixelHacks III Best Web App + Top Team Award!
+PixelHacks III Best Web App + Top Team Award! Devpost link: https://devpost.com/software/mind-the-gap-8qwa9c
 
 ## Inspiration
 The gender pay gap is a real, persistent problem in the US, yet many people either don't believe it exists, or  worse, turn a blind eye to it. We wanted our project to address this issue and show people that the gap is real, and it won't go away until we take collective action to fix it.
