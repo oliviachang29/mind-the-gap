@@ -7,7 +7,7 @@ A beautiful, interactive visualization of US occupations.
 PixelHacks III Best Website Winner + Top 6 Finisher!
 
 ## Inspiration
-The gender pay gap is a real, persistent problem in the US, yet many people either don't believe it exists, or  worse, turn a blind eye to it. We wanted our project to address this issue and show people that the gap is real, and it won't go away until we take collective action to fix it.
+The gender pay gap is a real, persistent problem in the US, yet many people either don't believe it exists, or worse, turn a blind eye to it. We wanted our project to address this issue and show people that the gap is real, and it won't go away until we take collective action to fix it.
 
 ## What it does
 Mind the Gap is an interactive bubble chart. The size of each bubble represents the number of employees in each profession, and the color of each bubble corresponds to a subcategory and a larger supercategory.
@@ -31,3 +31,5 @@ First, we would like to build a program that automatically scrapes the informati
 Second, we would like to expand our database. As mentioned before, it currently only contains the newest statistics for the entire nation, and does not have data from previous years. We would also like to add information on jobs by county and state.
 
 Finally, we’d love to spread the word about Mind the Gap. A great place to start would be posting on ProductHunt, where it will reach many in the tech industry.
+
+(c) 2019 Olivia Chang and Rainy Yan. All rights reserved.
